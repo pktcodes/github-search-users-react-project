@@ -31,8 +31,8 @@ export default ReactComponent
 [React Icons - Main Docs](https://react-icons.github.io/react-icons/)
 
 ```jsx
-import { FiUsers, FiUserPlus } from 'react-icons/fi';
-<FiUsers className='nameOfTheClass'> </FiUsers>;
+import { FiUsers, FiUserPlus } from "react-icons/fi";
+<FiUsers className="nameOfTheClass"> </FiUsers>;
 ```
 
 ## React Router Dom
@@ -44,7 +44,7 @@ version used - "react-router-dom": "^5.2.0",
 - <Switch> renders the first child <Route> that matches
 - A <Route path="*"> always matches
 
-## Gihthub API
+## Github API
 
 - [Root Endpoint](https://api.github.com)
 - [Get User](https://api.github.com/users/wesbos)

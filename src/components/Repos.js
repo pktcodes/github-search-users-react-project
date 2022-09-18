@@ -50,9 +50,8 @@ const Repos = () => {
       <Wrapper className="section-center">
         <Pie3D data={languages}></Pie3D>
 
-        {/* Showcasing grid column layout */}
         <div></div>
-        <ExampleChart data={chartData}></ExampleChart>
+        <Doughnut2D data={chartData}></Doughnut2D>
         <div></div>
       </Wrapper>
     </section>

@@ -49,7 +49,11 @@ const Repos = () => {
     <section className="section">
       <Wrapper className="section-center">
         <Pie3D data={languages}></Pie3D>
-        {/* <ExampleChart data={chartData}></ExampleChart> */}
+
+        {/* Showcasing grid column layout */}
+        <div></div>
+        <ExampleChart data={chartData}></ExampleChart>
+        <div></div>
       </Wrapper>
     </section>
   );

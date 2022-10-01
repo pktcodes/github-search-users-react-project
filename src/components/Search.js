@@ -1,9 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
-import { MdSearch } from 'react-icons/md';
-import { GithubContext } from '../context/context';
+import React from "react";
+import styled from "styled-components";
+import { MdSearch } from "react-icons/md";
+import { GithubContext } from "../context/context";
+
 const Search = () => {
-  return <h2>search component</h2>;
+  const [user, setUser] = React.useState("");
+
+  const handleSubmit = (event) => {
+    console.log(user);
+    event.preventDefault();
+
+    if (user) {
+      //more logic is coming soon
+      //optional - But, is there is mistake in spelling, user need to type whole word again so, we will not consider it
+      //setUser("");
+    }
+  };
+
+  return (
+    <section className="section">
+      <Wrapper className="section-center">
+        <form onSubmit={handleSubmit}>
+          <div className="form-control">
+            <MdSearch></MdSearch>
+            <input
+              type="text"
+              placeholder="enter github user"
+              value={user}
+              onChange={(event) => setUser(event.target.value)}
+            />
+            <button type="submit">search</button>
+          </div>
+        </form>
+        <h3>requests : 60 / 60</h3>
+      </Wrapper>
+    </section>
+  );
 };
 
 const Wrapper = styled.div`

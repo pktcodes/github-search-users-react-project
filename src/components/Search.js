@@ -5,16 +5,17 @@ import { GithubContext } from "../context/context";
 
 const Search = () => {
   const [user, setUser] = React.useState("");
-  const { requests, error } = React.useContext(GithubContext);
+  const { requests, error, searchGithubUser } = React.useContext(GithubContext);
 
   const handleSubmit = (event) => {
     console.log(user);
     event.preventDefault();
 
     if (user) {
-      //more logic is coming soon
-      //optional - But, is there is mistake in spelling, user need to type whole word again so, we will not consider it
+      searchGithubUser(user);
+
       //setUser("");
+      //optional - But, if is there is mistake in spelling, user need to type whole word again so, we will not consider it now.
     }
   };
 

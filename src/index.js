@@ -12,8 +12,9 @@ ReactDOM.render(
       domain={process.env.REACT_APP_DOMAIN}
       clientId={process.env.REACT_APP_CLIENT_ID}
       redirectUri={window.location.origin}
-      // https://auth0.github.io/auth0-react/interfaces/Auth0ProviderOptions.html#cacheLocation
       cacheLocation="localstorage"
+      // https://auth0.github.io/auth0-react/interfaces/Auth0ProviderOptions.html#cacheLocation
+      // We need this property to persist the data for logins escpeically social ones because the email login is saved in auth0 memory.
     >
       <GithubProvider>
         <App />

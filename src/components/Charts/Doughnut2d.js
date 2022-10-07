@@ -28,7 +28,7 @@ const ChartComponent = ({ data }) => {
       chart: {
         caption: "Stars Per Language",
         decimals: 0,
-        pieRadius: 45,
+        pieRadius: 80,
         showPercentValues: 0,
         theme: "candy",
       },

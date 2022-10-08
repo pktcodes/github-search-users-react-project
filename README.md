@@ -2,14 +2,14 @@
 > PROD [Live] : https://react-github-search-users-prod.netlify.app
 
 #### Github Search Users consists of a straightforward user interface where there is a 
- - **Login** page with a `Login` / `Sign up` button which on click opens a  popup window handled by Auth0.
-   - The popup window gives options to log in and signup with email along with social logins ie. google, LinkedIn
+ - **Login** page with a **`Login / Sign up`** button which on click opens a  popup window handled by Auth0.
+   - The popup window gives options to log in or signup with email along with social logins i.e. *Google, LinkedIn*
    - After successful login and authentication, the user is taken to a dashboard.
- - **Dashboard** where we have Navbar, Search form, and a GitHub user profile information by default.
-   - Navbar will have the info of the user who logged in along with a logout button.
-   - Search form is used for searching a user profile with the username and will also show how many requests are remaining for the user can query.
-   - User profile with user info, followers, and information about repos
- - **Loading** GIF has been implemented, the **Error** component handles unknown route URLs and Auth0 handles   authentication.
+ - **Dashboard** is where we have Navbar, Search form, and the static user profile information has been set by default.
+   - **Navbar** will have the info of the user who logged in along with a **`Logout`** button which on click the user gets logged out.
+   - **Search** form is used for searching a user profile with the username and will also show how many requests are remaining for the user can query.
+   - User profile information consists of information about the user i.e. *user info, followers, and information about repositories in the form of **charts**.*
+ - **Loading** GIF has been implemented, the **Error** component handles unknown route URLs and **Auth0** has been used to handle the authentication.
  - To run the project locally, clone the repo, `npm install` to install the dependencies, and `npm start` to start up the development server on default port 3000.
  
 #### Languages 

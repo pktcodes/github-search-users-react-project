@@ -1,3 +1,29 @@
+# Github Search Users 🔍
+> PROD [Live] : https://react-github-search-users-prod.netlify.app
+
+#### Github Search Users consists of a straightforward user interface where there is a 
+ - **Login** page with a `Login` / `Sign up` button which on click opens a  popup window handled by Auth0.
+   - The popup window gives options to log in and signup with email along with social logins ie. google, LinkedIn
+   - After successful login and authentication, the user is taken to a dashboard.
+ - **Dashboard** where we have Navbar, Search form, and a GitHub user profile information by default.
+   - Navbar will have the info of the user who logged in along with a logout button.
+   - Search form is used for searching a user profile with the username and will also show how many requests are remaining for the user can query.
+   - User profile with user info, followers, and information about repos
+ - **Loading** GIF has been implemented, the **Error** component handles unknown route URLs and Auth0 handles   authentication.
+ - To run the project locally, clone the repo, `npm install` to install the dependencies, and `npm start` to start up the development server on default port 3000.
+ 
+#### Languages 
+HTML, CSS, JavaScript, ECMAScript, React ~ ContextAPI - Hooks ~ useState, useEffect, useContext, React Router 6
+
+#### API
+https://api.github.com/
+
+#### Deployment / Hosting
+
+Netlify
+
+---
+
 ## Starter Project
 
 - css provided (global styles, styled components)
@@ -113,3 +139,7 @@ package.json
 ```
 
 [create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
+
+---
+
+_Note: I have developed this project as part of React and Projects Course taught by John Smilga._
